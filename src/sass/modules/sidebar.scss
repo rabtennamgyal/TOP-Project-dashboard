@@ -1,0 +1,120 @@
+.sidebar {
+    background: #0ea5e9;
+    min-height: 100vh;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 5fr;
+
+    .sidebarOne {
+        display: flex;
+        padding: 1.3rem;
+
+        h1 {
+            cursor: pointer;
+            margin: 8px 0 0 10px;
+            font-size: 2.3rem;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+        }
+
+        #dashboard {
+            cursor: pointer;
+            height: 45px;
+            width: 45px;
+
+            @include respond(phone) {
+                height: 30px;
+                width: 30px;
+            }
+
+            @include respond(tab-port) {
+                margin-top: .5rem;
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+
+    .sidebarTwo {
+        display: grid;
+        grid-template-rows: 55% 45%;
+
+        .divOne {
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .list {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                margin: 1rem 0;
+
+                li {
+                    cursor: pointer;
+                    margin: 0 0 0 2rem;
+                    list-style: none;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    color: #fff;
+
+                    @include respond(phone) {
+                        font-size: 1.3rem;
+                    }
+
+                    @include respond(tab-port) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .divTwo {
+            margin-top: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .list {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                margin: 1rem 0;
+
+                li {
+                    cursor: pointer;
+                    margin: 0 0 0 2rem;
+                    list-style: none;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    color: #fff;
+
+                    @include respond(phone) {
+                        font-size: 1.3rem;
+                    }
+
+                    @include respond(tab-port) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .icon {
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .text {
+        color: #fff;
+    }
+}
